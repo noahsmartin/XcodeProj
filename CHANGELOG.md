@@ -2,16 +2,24 @@
 
 ## Next
 
+### Added
+
+- Add XCSchemeManagement struct https://github.com/tuist/XcodeProj/pull/565 by @pepibumur.
+
 ## 7.14.0
 
 ### Fixed
+
 - lastKnownFileType for .ttf and .sqlite files https://github.com/tuist/XcodeProj/pull/557 by @adamkhazi
+
 ### Added
+
 - Added selectedTests attribute to XCScheme.TestableReference https://github.com/tuist/XcodeProj/pull/559 by @ooodin
 
 ## 7.13.0
 
 ### Added
+
 - Support `on-demand-install-capable` application https://github.com/tuist/XcodeProj/pull/554 by @d-date
 - Add RemotePath to RemoteRunnable https://github.com/tuist/XcodeProj/pull/555 by @kwridan
 
@@ -34,6 +42,7 @@
 - Point `XcodeProjCExt` to version 0.1.0 https://github.com/tuist/XcodeProj/pull/540 by @khoi
 
 ### Added
+
 - Added `useTestSelectionWhitelist` attribute to `XCScheme.TestableReference` https://github.com/tuist/xcodeproj/pull/516 by @basvankuijck.
 
 ### Fixed
@@ -43,6 +52,7 @@
 ## 7.10.0
 
 ### Changed
+
 - Optimize bottlenecks https://github.com/tuist/XcodeProj/pull/529 by @michaeleisel
 
 ## 7.9.0
