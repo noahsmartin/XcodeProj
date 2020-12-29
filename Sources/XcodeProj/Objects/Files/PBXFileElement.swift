@@ -173,8 +173,14 @@ public extension PBXFileElement {
             }
 
             guard let fullGroupPath: Path = groupPath else { return nil }
-            guard let filePath = self is PBXVariantGroup ? try baseVariantGroupPath() : path else { return fullGroupPath }
-            return fullGroupPath + filePath
+            let filePath: String?
+            if self is PBXVariantGroup {
+              filePath = try baseVariantGroupPath() ?? path
+            } else {
+              filePath = path
+            }
+            guard let fullFilePath = filePath else { return fullGroupPath }
+            return fullGroupPath + fullFilePath
         default:
             return nil
         }
